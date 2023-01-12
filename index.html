@@ -11,24 +11,33 @@
 
 <body>
 
-    <form class="form" id="contactForm">
+    <form class="form" id="Form">
         <div class="form__section">
 
             <div>
                 <input class="form__input" type="text" name="Nom" id="Nom" placeholder="Nom">
+                <label class="error-message" for="Nom" id="NomError">Veuillez renseigner votre nom.</label>
             </div>
             <div>
                 <input class="form__input" type="email" name="email" id="email" placeholder="Addresse Email">
+                <label class="error-message" for="email" id="emailError">Veuillez renseigner un email valide.</label>
+
             </div>
             <div>
                 <input class="form__input" type="tel" name="tel" id="tel" placeholder="Numero de Telephone">
+                <label class="error-message" for="tel" id="telError">Veuillez renseigner un numéro de téléphone valide.</label>
+
             </div>
             <div>
                 <input class="form__input" type="password" name="mdp" id="mdp" placeholder="Mot de Passe">
+                <label class="error-message" for="mdp" id="mdpError">Veuillez renseigner un Mot de Passe valide.</label>
+
             </div>
         </div>
 
         <button class="form__submit" type="submit">Validé</button>
+
+        <script src="/app.js"></script>
     </form>
 
 </body>
