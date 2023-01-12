@@ -2,10 +2,6 @@
 const contactForm = document.getElementById('Form');
 
 
-function resetForm() {
-    contactForm.reset();
-  }
-
 
 contactForm.addEventListener('submit', (event) => {
 
@@ -67,7 +63,7 @@ contactForm.addEventListener('submit', (event) => {
     
     if (!Object.values(errors).includes(true)) {
         console.log(formData);
-        resetForm();
+        contactForm.reset();
     }
 
 
