@@ -1,6 +1,12 @@
 
 const contactForm = document.getElementById('Form');
 
+
+function resetForm() {
+    contactForm.reset();
+  }
+
+
 contactForm.addEventListener('submit', (event) => {
 
     event.preventDefault();
@@ -36,10 +42,10 @@ contactForm.addEventListener('submit', (event) => {
 
     if (!formData.Nom || !formData.email || !formData.tel || !formData.mdp) {
         const emailRegex = /[A-Z0-9._%+-]+@[A-Z0-9-]+.+.[A-Z]{2,4}/igm;
-        const nameRegex = /^[a-zA-Z ]+$/;
+        const NomRegex = /^[a-zA-Z ]+$/;
         const telRegex = /^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/;
         const mdpRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/;
-        if (!formData.Nom || !nameRegex.test(formData.Nom)) {
+        if (!formData.Nom || !NomRegex.test(formData.Nom)) {
             errors.Nom = true;
             NomError.style.display = 'block';
         }
@@ -60,10 +66,12 @@ contactForm.addEventListener('submit', (event) => {
 
     
     if (!Object.values(errors).includes(true)) {
-        console.log(formData)
+        console.log(formData);
+        resetForm();
     }
 
 
 
 
 })
+
