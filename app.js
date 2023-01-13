@@ -45,7 +45,7 @@ contactForm.addEventListener('submit', (event) => {
             errors.Nom = true;
             NomError.style.display = 'block';
         }
-        if (!formData.email || !emailRegex.test(formData.email)) {
+        if (!formData.email || !adresseRegex.test(formData.email)) {
             errors.email = true;
             emailError.style.display = 'block';
         }
