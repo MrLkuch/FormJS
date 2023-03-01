@@ -113,7 +113,7 @@ contactForm.addEventListener('submit', (event) => {
         Price.textContent = `Le prix total est de ${calcprix()} euros`
         main.appendChild(Price);
         
-        //contactForm.reset();
+        contactForm.reset();
     }
 
 
