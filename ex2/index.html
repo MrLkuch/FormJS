@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <form class="form" id="Form">
         <div class="form__section">
 
@@ -20,41 +19,44 @@
             </div>
             <div>
                 <input class="form__input" type="adresse" name="adresse" id="adresse" placeholder="Adresse ">
-                <label class="error-message" for="adresse" id="adresseError">Veuillez renseigner un adresse valide.</label>
+                <label class="error-message" for="adresse" id="adresseError">Veuillez renseigner un adresse
+                    valide.</label>
 
             </div>
             <div>
                 <input class="form__input" type="tel" name="tel" id="tel" placeholder="Numero de Telephone">
-                <label class="error-message" for="tel" id="telError">Veuillez renseigner un numéro de téléphone valide.</label>
+                <label class="error-message" for="tel" id="telError">Veuillez renseigner un numéro de téléphone
+                    valide.</label>
 
             </div>
             <div>
                 <label class="lab" for="" id="">Taille</label>
                 <select name="taille" id="taille">
                     <option value="">--Choisir une taille--</option>
-                    <option value="S">S</option>
-                    <option value="M">M</option>
-                    <option value="L">L</option>
+                    <option value="S">S 5€</option>
+                    <option value="M">M 10€</option>
+                    <option value="L">L 12€</option>
                 </select>
-                <label class="error-message" for="taille" id="tailleError">Veuillez renseigner une taille valide.</label>
+                <label class="error-message" for="taille" id="tailleError">Veuillez renseigner une taille
+                    valide.</label>
 
             </div>
             <div>
                 <label class="lab" for="" id="">Type de Pizza</label>
                 <select name="pizza" id="pizza">
                     <option value="">--Choisir une pizza--</option>
-                    <option value="royal">Royal</option>
-                    <option value="fromage">4 fromage</option>
+                    <option value="royal">Royal 3€</option>
+                    <option value="fromage">4 fromage 2€</option>
                     <option value="peperoni">peperoni</option>
                 </select>
-                <label class="error-message" for="pizza" id="pizzaError">Veuillez renseigner un type de pizza.</label>
+                <label class="error-message" for="pizza" id="pizzaError">Veuillez renseigner un type de
+                    pizza.</label>
 
             </div>
             <div class="form__input--textarea__container">
                 <textarea class="form__input form__input--textarea" name="message" id="message"
                     placeholder="votre message"></textarea>
-                   
-                <label class="error-message" for="message" id="messageError">Veuillez renseigner votre message.</label>
+
             </div>
         </div>
 
@@ -62,9 +64,8 @@
         <button class="reset" type="reset">reset</button>
 
 
-        <label for="">Votre total est de: </label>
-        <p class="prix"></p>
-        <script src="/ex2/app.js"></script>
+        <p id="main"></p>
+        <script src="app.js"></script>
     </form>
 
 </body>

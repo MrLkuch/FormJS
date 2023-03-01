@@ -108,7 +108,12 @@ contactForm.addEventListener('submit', (event) => {
         console.log(formData);
         console.log(calcprix());
         alert("commande envoyé avec succès")
-        contactForm.reset();
+        const main = document.getElementById('main')
+        const Price = document.createElement('h2')
+        Price.textContent = `Le prix total est de ${calcprix()} euros`
+        main.appendChild(Price);
+        
+        //contactForm.reset();
     }
 
 
